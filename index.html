@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frist project</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="webfonts">
+</head>
+<body>
+    <div class="w-75 mx-auto my-5" >
+        <label for="prodcutNameInput" class="lead"> prodcutName : </label>
+        <input type="text" class="form-control mb-3 mt-1" id="prodcutNameInput">
+        <label for="prodcutPriceInput" class="lead"> prodcutPrice : </label>
+        <input type="number" class="form-control mb-3 mt-1" id="prodcutPriceInput">
+       
+        <label for="prodcutCategryInput" class="lead"> prodcutCategry : </label>
+        <input type="text" class="form-control mb-3 mt-1" id="prodcutCategryInput">
+        <label for="prodcutDecsInput" class="lead"> prodcutDecs : </label>
+        <textarea type="text" class="form-control mb-3 mt-1" id="prodcutDecsInput"> </textarea>
+<button id="addBtn" onclick="addProdcut(); " class="btn  btn-info" >addProdact</button>
+    </div>
+
+    <input oninput="saerchPoduct(this.value)" type="text" placeholder="Search" id="sesrchProdcut"  class="w-50 form-control mx-auto " >
+    <div class="w-75 mx-auto py-5  ">
+        <table class="table lead text-center">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>price</th>
+                <th>categry</th>
+                <th>Decs</th>
+                <th  >Delet</th>
+                <th>updata</th>
+            </thead>
+            <tbody id="tabelBody">
+            
+            </tbody>
+        </table>
+    </div>
+<script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
